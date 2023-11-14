@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Étudiant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .profile-header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            animation: rotateImage 3s infinite linear;
+        }
+        .profile-header h1 {
+            margin: 10px 0;
+        }
+        .profile-info {
+            margin: 20px 0;
+        }
+        .profile-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="https://media.istockphoto.com/id/533837393/fr/photo/clown.jpg?s=612x612&w=0&k=20&c=UaCgdZb9d83fumpY4Q9LEhRNGCZTMjhIeNQwNbeMeX0=" alt="Photo de l'étudiant">
+            <h1>Étudiant (Théo Rigolo)</h1>
+            <p>Master en Ingénierie du Divertissement et de la Farce</p>
+        </div>
+        <div class="profile-info">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis Théo, un étudiant passionné par tout ce qui est amusant et inattendu. J'ai décidé de poursuivre une carrière académique dans l'art délicat de la plaisanterie après avoir été élu "Clown de la classe" trois années consécutives. Je suis spécialisé dans l'intégration de la comédie dans la vie quotidienne, et mon objectif ultime est de créer un robot qui lance des tartes à la crème avec une précision inégalée.
+            </p>
+            <h2>Éducation</h2>
+            <ul>
+                <li>Licence en Joyeuseté Appliquée - Université de la Bonne Humeur</li>
+                <li>Master en Ingénierie du Divertissement et de la Farce - École Supérieure des Farceurs</li>
+            </ul>
+            <h2>Compétences</h2>
+            <p>
+                <ul>
+                    <li>Expert en blagues et farces</li>
+                    <li>Champion de chaises musicales (niveau régional)</li>
+                    <li>Capacité remarquable à marcher avec des chaussures surdimensionnées</li>
+                    <li>Connaissance approfondie des meilleures techniques de lancer de tarte à la crème</li>
+                    <li>Développement de gadgets de farces, comme des coussins péteurs 2.0 connectés à une app</li>
+                    <li>Maîtrise de la jonglerie avec des objets insolites (pommes de terre, peluches, petits électroménagers)</li>
+                </ul>
+            </p>
+            <h2>Contact</h2>
+            <p>Email: theo.le.rigolo@ecoledefarce.com</p>
+            <p>Téléphone: +33 1 23 45 67 89</p>
+        </div>
+    </div>
+</body>
+</html>
